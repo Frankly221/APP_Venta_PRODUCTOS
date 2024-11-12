@@ -1,0 +1,69 @@
+name: app_movil_market
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  sizer: ^3.0.4
+  form_builder_validators: ^11.0.0
+  flutter_form_builder: ^9.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/imagenes/login/gatito_negro.png
+    - assets/imagenes/login/exito_verde.png
+
+
+
+  fonts:
+    - family: Chicle
+      fonts:
+        - asset: assets/fonts/Chicle-Regular.ttf
+
+    - family: JockeyOne
+      fonts:
+        - asset: assets/fonts/JockeyOne-Regular.ttf
+
+    - family: Quattrocento
+      fonts:
+        - asset: assets/fonts/Quattrocento-Regular.ttf
+        - asset: assets/fonts/Quattrocento-Bold.ttf
+          weight: 700
+
+    - family: SpaceGrotesk
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SpaceGrotesk-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SpaceGrotesk-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SpaceGrotesk-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/SpaceGrotesk-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SpaceGrotesk-VariableFont_wght.ttf
+
