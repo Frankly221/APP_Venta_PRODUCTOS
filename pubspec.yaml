@@ -35,6 +35,19 @@ flutter:
   assets:
     - assets/imagenes/login/gatito_negro.png
     - assets/imagenes/login/exito_verde.png
+    - assets/imagenes/menu/backus.png
+    - assets/imagenes/menu/gloria.png
+    - assets/imagenes/menu/laive.png
+    - assets/imagenes/menu/san_jorge.png
+    - assets/imagenes/menu/imagen_gato.png
+    - assets/imagenes/menu/1112.png
+    - assets/imagenes/menu/21.png
+    - assets/imagenes/menu/31.png
+    - assets/imagenes/menu/32.png
+    - assets/imagenes/menu/42.png
+    - assets/imagenes/menu/41.png
+    - assets/imagenes/menu/43.png
+    - assets/imagenes/menu/51.png
 
 
 
