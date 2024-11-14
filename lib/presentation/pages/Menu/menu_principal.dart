@@ -1,3 +1,5 @@
+import 'package:app_movil_market/presentation/pages/Menu/beltran.dart';
+import 'package:app_movil_market/presentation/pages/Menu/lacteos.dart';
 import 'package:app_movil_market/presentation/pages/Menu/navigation_bar_inferior.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/card_ancho.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/card_pedido_facil.dart';
@@ -145,19 +147,27 @@ class MenuPrincipal extends StatelessWidget {
                   Positioned(
                     bottom: 1.5.h,
                     left: 25.w,
-                    child: Container(
-                      width: 20.w,
-                      height: 8.h,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.black,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Beltran()));
+                      },
+                      child: Container(
+                        width: 20.w,
+                        height: 8.h,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.black,
+                          ),
                         ),
-                      ),
-                      child: Image.asset(
-                        'assets/imagenes/menu/backus.png',
-                        fit: BoxFit.scaleDown,
+                        child: Image.asset(
+                          'assets/imagenes/menu/9.png',
+                          fit: BoxFit.scaleDown,
+                        ),
                       ),
                     ),
                   ),
@@ -214,11 +224,29 @@ class MenuPrincipal extends StatelessWidget {
                     children: [
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 3.w),
-                        child: Text(
-                          'Promociones para ti',
-                          style: TextStyle(
-                            fontSize: 20.sp,
-                            fontFamily: 'Chicle',
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Promociones para ti',
+                                style: TextStyle(
+                                  fontSize: 20.sp,
+                                  fontFamily: 'Chicle',
+                                ),
+                              ),
+                              SizedBox(
+                                width: 1.w,
+                              ),
+                              Text(
+                                'ver más >',
+                                style: TextStyle(
+                                  fontSize: 17.sp,
+                                  fontFamily: 'Chicle',
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -265,11 +293,29 @@ class MenuPrincipal extends StatelessWidget {
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 3.w),
-                        child: Text(
-                          'Categorias',
-                          style: TextStyle(
-                            fontSize: 20.sp,
-                            fontFamily: 'Chicle',
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Categorias',
+                                style: TextStyle(
+                                  fontSize: 20.sp,
+                                  fontFamily: 'Chicle',
+                                ),
+                              ),
+                              SizedBox(
+                                width: 1.w,
+                              ),
+                              Text(
+                                'ver más >',
+                                style: TextStyle(
+                                  fontSize: 17.sp,
+                                  fontFamily: 'Chicle',
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -277,12 +323,20 @@ class MenuPrincipal extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         child: Row(
                           children: [
-                            SizedBox(
-                              height: 15.h,
-                              child: Card2(
-                                color: coloresPersonalizados[2],
-                                imagenURL: 'assets/imagenes/menu/41.png',
-                                text1: 'Lacteos',
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Lacteos()));
+                              },
+                              child: SizedBox(
+                                height: 15.h,
+                                child: Card2(
+                                  color: coloresPersonalizados[2],
+                                  imagenURL: 'assets/imagenes/menu/41.png',
+                                  text1: 'Lacteos',
+                                ),
                               ),
                             ),
                             SizedBox(

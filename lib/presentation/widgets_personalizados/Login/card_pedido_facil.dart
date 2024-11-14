@@ -15,7 +15,7 @@ class PedidoFacil extends StatelessWidget {
       ),
       child: Container(
         height: 17.h,
-        width: 30.w,
+        width: 25.w,
         child: Column(
           children: [
             SizedBox(
@@ -48,12 +48,12 @@ class PedidoFacil extends StatelessWidget {
                   fit: BoxFit.scaleDown),
             ),
             Container(
-              margin: EdgeInsets.only(right: 14.w),
+              margin: EdgeInsets.only(right: 10.w),
               child: Text('Leche laive',
                   style: TextStyle(fontSize: 15.sp, fontFamily: 'Chicle')),
             ),
             Container(
-              margin: EdgeInsets.only(right: 7.w),
+              margin: EdgeInsets.only(right: 4.w),
               child:
                   Text('Botella 400 g...', style: TextStyle(fontSize: 14.sp)),
             ),
