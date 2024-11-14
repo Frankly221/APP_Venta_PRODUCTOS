@@ -1,6 +1,7 @@
 import 'package:app_movil_market/presentation/pages/Menu/beltran.dart';
 import 'package:app_movil_market/presentation/pages/Menu/lacteos.dart';
 import 'package:app_movil_market/presentation/pages/Menu/navigation_bar_inferior.dart';
+import 'package:app_movil_market/presentation/pages/Menu/promociones_descuentos.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/card_ancho.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/card_pedido_facil.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/card_title_img.dart';
@@ -239,11 +240,16 @@ class MenuPrincipal extends StatelessWidget {
                               SizedBox(
                                 width: 1.w,
                               ),
-                              Text(
-                                'ver más >',
-                                style: TextStyle(
-                                  fontSize: 17.sp,
-                                  fontFamily: 'Chicle',
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PromocionesDescuento()));
+                                },
+                                child: Text(
+                                  'ver más >',
+                                  style: TextStyle(
+                                    fontSize: 17.sp,
+                                    fontFamily: 'Chicle',
+                                  ),
                                 ),
                               ),
                             ],

@@ -28,15 +28,15 @@ class CardAncho extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: SizedBox(
-        width: 36.w,
-        height: 14.h,
+        width: 38.w,
+        height: 12.h,
         child: Row(
           children: [
             SizedBox(
-              width: 26.w,
-              height: 15.h,
+              width: 23.w,
+              height: 12.h,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Align(
                     alignment: Alignment.topLeft,
@@ -68,7 +68,9 @@ class CardAncho extends StatelessWidget {
             ),
             Expanded(
               child: SizedBox(
-                child: Image.asset(imagenURL2),
+                child: Image.asset(
+                  imagenURL2,
+                ),
               ),
             ),
           ],

@@ -1,3 +1,4 @@
+import 'package:app_movil_market/presentation/pages/iniciar_sesion/login.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/bottom_large.dart';
 import 'package:app_movil_market/presentation/widgets_personalizados/Login/custom_form.dart';
 import 'package:app_movil_market/utils/colores.dart';
@@ -364,7 +365,12 @@ class CrearCuenta extends StatelessWidget {
                       height: 7.h,
                       child: BotonLargo(
                         nameTexto: 'Regístrate',
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Login()));
+                        },
                         colorFont: Colors.black,
                         colorText: Colors.white,
                       ),

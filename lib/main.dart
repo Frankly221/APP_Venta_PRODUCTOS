@@ -1,4 +1,5 @@
 import 'package:app_movil_market/presentation/pages/Menu/menu_principal.dart';
+import 'package:app_movil_market/presentation/pages/iniciar_sesion/login.dart';
 import 'package:app_movil_market/presentation/pages/recuperar_cuenta/nueva_password.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       builder: (context, orientation, deviceType) {
         return const MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: MenuPrincipal(),
+          home: Login(),
         );
       },
     );
