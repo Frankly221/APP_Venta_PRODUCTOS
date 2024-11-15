@@ -215,7 +215,7 @@ class MenuPrincipal extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 3.w),
               child: SizedBox(
-                height: 55.h,
+                height: 51.h,
                 width: double.infinity,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.vertical,
@@ -241,8 +241,12 @@ class MenuPrincipal extends StatelessWidget {
                                 width: 1.w,
                               ),
                               GestureDetector(
-                                onTap: (){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PromocionesDescuento()));
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const PromocionesDescuento()));
                                 },
                                 child: Text(
                                   'ver más >',
